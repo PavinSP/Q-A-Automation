@@ -1,0 +1,78 @@
+[
+    {
+        "question": "What is Java?",
+        "answer": "Java is a high-level, object-oriented programming language developed by Sun Microsystems. It is designed to be platform-independent through the use of the Java Virtual Machine (JVM), allowing developers to write once and run anywhere."
+    },
+    {
+        "question": "What are the main features of Java?",
+        "answer": "Key features of Java include platform independence, object-oriented structure, automatic garbage collection, strong memory management, multithreading capabilities, and a rich standard library."
+    },
+    {
+        "question": "What is the difference between JDK, JRE, and JVM?",
+        "answer": "JDK (Java Development Kit) is a software development kit used to develop Java applications. JRE (Java Runtime Environment) provides libraries and components necessary to run Java applications. JVM (Java Virtual Machine) is an engine that executes Java bytecode and converts it into machine language."
+    },
+    {
+        "question": "What is an object in Java?",
+        "answer": "An object in Java is an instance of a class that encapsulates both data (attributes) and behavior (methods). Objects are created from classes and represent real-world entities."
+    },
+    {
+        "question": "What are constructors in Java?",
+        "answer": "Constructors are special methods in Java used to initialize objects. They have the same name as the class and do not have a return type. There are default constructors and parameterized constructors."
+    },
+    {
+        "question": "What is inheritance in Java?",
+        "answer": "Inheritance is a core concept of object-oriented programming that allows one class (subclass) to inherit fields and methods from another class (superclass). This promotes code reusability and establishes a hierarchical relationship."
+    },
+    {
+        "question": "What is polymorphism?",
+        "answer": "Polymorphism allows methods to do different things based on the object that it is acting upon. In Java, polymorphism can be achieved through method overloading (compile-time) and method overriding (runtime)."
+    },
+    {
+        "question": "What are interfaces in Java?",
+        "answer": "Interfaces in Java are abstract types that allow the definition of methods without implementing them. A class can implement multiple interfaces, promoting multiple inheritance in a way that avoids ambiguity."
+    },
+    {
+        "question": "What is exception handling in Java?",
+        "answer": "Exception handling in Java is a powerful mechanism to handle runtime errors, allowing the program to continue its normal flow. It uses try-catch blocks to catch exceptions and finally blocks for cleanup actions."
+    },
+    {
+        "question": "What are collections in Java?",
+        "answer": "Collections in Java are frameworks that provide architecture for storing and manipulating groups of objects. The main interfaces include List, Set, Map, and Queue, each serving different purposes."
+    },
+    {
+        "question": "What is the difference between ArrayList and LinkedList?",
+        "answer": "ArrayList uses a dynamic array to store elements, allowing fast random access but slower insertions/deletions. LinkedList uses a doubly linked list structure, providing faster insertions/deletions but slower access times."
+    },
+    {
+        "question": "What is garbage collection in Java?",
+        "answer": "Garbage collection in Java is an automatic memory management process that reclaims memory used by objects that are no longer reachable or needed by the application, helping to prevent memory leaks."
+    },
+    {
+        "question": "What is multithreading?",
+        "answer": "Multithreading in Java allows concurrent execution of two or more threads to maximize CPU utilization. It enables efficient program execution by performing multiple operations simultaneously."
+    },
+    {
+        "question": "What are lambda expressions?",
+        "answer": "Lambda expressions are a feature introduced in Java 8 that allows for passing functionality as an argument to methods. They provide a clear and concise way to represent one method interface using an expression."
+    },
+    {
+        "question": "What is the Stream API?",
+        "answer": "The Stream API, introduced in Java 8, provides a functional approach to processing sequences of elements (like collections). It supports operations like filter, map, reduce, and collect for efficient data manipulation."
+    },
+    {
+        "question": "What is the purpose of the 'final' keyword?",
+        "answer": "'final' can be applied to classes (preventing inheritance), methods (preventing overriding), and variables (making them constants). It ensures that certain elements remain unchanged after their initial assignment."
+    },
+    {
+        "question": "What are annotations in Java?",
+        "answer": "Annotations are metadata added to classes, methods, or variables that provide information about the program but do not directly affect its semantics. They can be used for various purposes like documentation or configuration."
+    },
+    {
+        "question": "What is the difference between '== 'and 'equals()' method?",
+        "answer": "'==' checks for reference equality (whether two references point to the same object), while 'equals()' checks for value equality (whether two objects are logically equivalent)."
+    },
+    {
+        "question": "What is JDBC?",
+        "answer": "JDBC (Java Database Connectivity) is an API that enables Java applications to interact with databases. It provides methods for querying and updating data in relational databases using SQL."
+    }
+]
