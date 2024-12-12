@@ -1,4 +1,5 @@
 import json
+import os
 from gtts import gTTS
 from moviepy import TextClip, concatenate_videoclips, AudioFileClip
 
@@ -30,9 +31,13 @@ with open("questions.json", "r") as file:
 audio_files = []
 for idx, qa in enumerate(qa_list):
     text = f"Question: {qa['question']}. Answer: {qa['answer']}"
-    tts = gTTS(text)
     audio_filename = f"audio_{idx+1}.mp3"
-    tts.save(audio_filename)
+    
+    # Check if audio file already exists, skip creation if it does
+    if not os.path.exists(audio_filename):
+        tts = gTTS(text)
+        tts.save(audio_filename)
+    
     audio_files.append(audio_filename)
 
 # Step 3: Generate video for each question and answer
@@ -66,3 +71,7 @@ for idx, qa in enumerate(qa_list):
 # Step 4: Concatenate all Q&A clips into a single video
 final_video = concatenate_videoclips(clips)
 final_video.write_videofile("final_video.mp4", fps=24)
+
+# Delete temporary MP3 files
+for audio_file in audio_files:
+    os.remove(audio_file)
