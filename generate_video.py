@@ -47,9 +47,8 @@ for idx, qa in enumerate(qa_list):
     answer_duration = estimate_duration(qa['answer'], chars_per_second=15)
     
     # Create text clips for the question and answer with dynamic durations
-    
     question_clip = TextClip(f"Q: {wrapped_question}", font="Arial", fontsize=40, color='white', bg_color='black', size=(1280, 720)).set_position('center').set_duration(question_duration)
-    answer_clip = TextClip(f"A: {wrapped_answer}", font="Arial", font_size=30, color='white', bg_color='black', size=(1280, 720)).set_position('center').set_duration(answer_duration)
+    answer_clip = TextClip(f"A: {wrapped_answer}", font="Arial", fontsize=30, color='white', bg_color='black', size=(1280, 720)).set_position('center').set_duration(answer_duration)
 
     # Generate audio for the question and answer separately
     question_audio = AudioFileClip(audio_files[idx]).subclip(0, question_duration)  # Match audio to question duration
